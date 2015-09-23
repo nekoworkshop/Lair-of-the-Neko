@@ -1,0 +1,58 @@
+Moving around
+//Here are the commands I have yet mastered. Remove them as I integrate them into my editing workflow.
+W   move to beginning of next word after a whitespace
+B   move to beginning of previous word before a whitespace
+E   move to end of word before a whitespace
+All the above movements can be preceded by a count; e.g. 4j will move down 4 lines.
+
+^   move to first non-blank char of the line
+_   same as above, but can take a count to go to a different line
+g_  move to last non-blank char of the line (can also take a count as above)
+
+nG  move to n'th line of file (where n is a number)
+
+H   move to top of screen
+M   move to middle of screen
+L   move to bottom of screen
+
+z.  put the line with the cursor at the center
+zt  put the line with the cursor at the top
+zb  put the line with the cursor at the bottom of the screen
+
+Ctrl-D  move half-page down
+Ctrl-U  move half-page up
+Ctrl-B  page up
+Ctrl-F  page down
+Ctrl-o  jump to last cursor position
+Ctrl-i  jump to next cursor position
+
+n   next matching search pattern
+N   previous matching search pattern
+*   next whole word under cursor
+#   previous whole word under cursor
+g*  next matching search (not whole word) pattern under cursor
+g#  previous matching search (not whole word) pattern under cursor
+
+%   jump to matching bracket { } [ ] ( )
+//-----------------------------------------------------
+Ctrl-W switch between windows(buffers?). May combined with arrow keys but works
+	just fine by tapping it.
+Ctrl-W-+ reset splited screen width/height
+
+:set scb! turn on/off synced scrolling
+
+Yank multiple lines
+3y to tank three lines or just use V to select multiple lines and y them
+
+Fix indentation
+:retab need to figure out what exactly it does, though
+
+:w !diff % -
+Compare edited buffer with original file with diff. 
+
+In vi, J (that's shift-j) or :join should do what you want, for the most part. Note that they adjust whitespace. In particular, you'll end up with a space between the two joined lines in many cases, and if the second line is indented that indentation will be removed prior to joining.
+In vim you can also use gJ (g, then shift-j) or :join!. These will join lines without doing any whitespace adjustments.
+
+open new file in split window
+sp/vsp
+ne/vne

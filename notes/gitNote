@@ -1,0 +1,5 @@
+
+When git tells you remote branch has work that you don't have, you fetch and rebase!
+git fetch origin            # Updates origin/master
+git rebase origin/master    # Rebases current branch onto origin/master
+
