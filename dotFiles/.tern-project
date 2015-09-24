@@ -1,0 +1,14 @@
+{
+	    "libs": [
+		    "browser",
+		    "underscore",
+		    "jquery"
+	    ],
+	    "loadEagerly":[
+		    "./src/library/modules/*.js",
+		    "./src/library/managers/*.js",
+		    "./src/library/objects/*.js"
+	    ],
+	    "plugins": {
+	    }
+}

@@ -35,8 +35,7 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'marijnh/tern_for_vim'
 Plugin 'tpope/vim-fugitive'
-
-
+Plugin 'majutsushi/tagbar'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -64,3 +63,4 @@ set laststatus=2
 set timeoutlen=50
 
 set diffopt+=vertical " otherwise git diff will open vertical window
+let g:ctrlp_show_hidden = 1 "let ctrlp show dotfiles
